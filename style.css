@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: chocolate;
+    margin: 0;
+}
+
+#create-account-form {
+    width: 90%;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+    text-align: center;
+}
+
+.input-group {
+    margin: 15px 0;
+    position: relative;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.input-group.success input {
+    border: 3px solid green;
+}
+
+.input-group.error input {
+    border: 3px solid red;
+}
+
+i.fa-solid {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    visibility: hidden;
+}
+
+.input-group.success i.fa-circle-check {
+    visibility: visible;
+    color: green;
+}
+
+.input-group.error i.fa-circle-exclamation {
+    visibility: visible;
+    color: red;
+}
+
+p {
+    color: red;
+    font-size: 15px;
+    margin-top: 3px;
+    visibility: hidden;
+}
+
+.input-group.error p {
+    visibility: visible;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: chocolate;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #d2691e;
+}

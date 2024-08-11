@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <form id="create-account-form">
+        <div class="title">
+            <h2>Create Account</h2>
+        </div>
+        <!-- User name -->
+        <div class="input-group">
+            <label for="username">Name</label>
+            <input id="userName" placeholder="dalia" name="userName">
+            <i class="fa-solid fa-circle-check"></i> 
+            <i class="fa-solid fa-circle-exclamation" ></i>
+            <p>Error Message</p>
+        </div>
+        <!-- Email -->
+        <div class="input-group">
+            <label for="email">Email</label>
+            <input id="email" placeholder="hello@gmail.com" name="email">
+            <i class="fa-solid fa-circle-check" ></i> 
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <p>Error Message</p>
+        </div>
+        <!-- Password -->
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input id="password" placeholder="password" name="password">
+            <i class="fa-solid fa-circle-check"></i> 
+            <i class="fa-solid fa-circle-exclamation" ></i>
+            <p>Error Message</p>
+        </div>
+        <!-- Confirm password -->
+        <div class="input-group">
+            <label for="password2">Confirm Password</label>
+            <input id="password2" placeholder="confirm password" name="password2">
+            <i class="fa-solid fa-circle-check"></i> 
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <p>Error Message</p>
+        </div>
+        <button class="btn" type="submit">Submit</button>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
